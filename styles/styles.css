@@ -1,72 +1,64 @@
 /*
- * Tatry Topo — Design System
- * Polish Tatra Mountains rock climbing route database
+ * Velocity — Automotive Design System
+ * Modern futuristic automotive aesthetic
  */
 
 :root {
-  /* Granite Neutrals */
-  --granite-900: #1A1D21;
-  --granite-800: #252930;
-  --granite-700: #353A42;
-  --granite-600: #4A5060;
-  --granite-500: #6B7280;
-  --granite-400: #9CA3AF;
-  --granite-300: #C4C9D4;
-  --granite-200: #E2E5EB;
-  --granite-100: #F0F2F5;
-  --granite-50: #F8F9FB;
+  /* Carbon Neutrals — blue-undertone dark palette */
+  --carbon-950: #07090C;
+  --carbon-900: #0C1017;
+  --carbon-800: #131721;
+  --carbon-700: #1C2233;
+  --carbon-600: #2A3347;
+  --carbon-500: #4A5568;
+  --carbon-400: #718096;
+  --carbon-300: #A0AEC0;
+  --carbon-200: #CBD5E0;
+  --carbon-100: #E2E8F0;
+  --carbon-50: #F7FAFC;
 
-  /* Accent — Summit Orange */
-  --summit-orange: #E8652B;
-  --summit-orange-light: #F28A5A;
-  --summit-orange-dark: #C44E1A;
+  /* Accent — Electric */
+  --electric-cyan: #00D4FF;
+  --electric-cyan-light: #66E5FF;
+  --electric-cyan-dark: #00A3C7;
+  --plasma-violet: #7B61FF;
+  --plasma-violet-light: #A48BFF;
+  --plasma-violet-dark: #5A3FD6;
 
-  /* Accent — Ridge Red */
-  --ridge-red: #D93B3B;
-  --ridge-red-light: #E86868;
-  --ridge-red-dark: #B52A2A;
-
-  /* Accent — Pine Green */
-  --pine-green: #2D8C5A;
-  --pine-green-light: #4AAF78;
-  --pine-green-dark: #1E6B42;
-
-  /* Accent — Sky Blue */
-  --sky-blue: #3B82C4;
-  --sky-blue-light: #6AA3D8;
-  --sky-blue-dark: #2A6299;
-
-  /* Accent — Chalk Yellow */
-  --chalk-yellow: #E8B832;
-  --chalk-yellow-light: #F0CC66;
-  --chalk-yellow-dark: #C49A1E;
-
-  /* Grade Colors — UIAA Scale */
-  --grade-easy: #4AAF78;
-  --grade-moderate: #3B82C4;
-  --grade-hard: #E8652B;
-  --grade-extreme: #D93B3B;
-  --grade-project: #9333EA;
+  /* Status Colors */
+  --status-error: #FF4D6A;
+  --status-success: #00E68A;
+  --status-warning: #FFB830;
+  --status-info: var(--electric-cyan);
 
   /* Semantic Colors */
-  --background-color: #fff;
-  --bg-primary: var(--granite-50);
-  --bg-dark: var(--granite-900);
-  --light-color: var(--granite-100);
-  --dark-color: var(--granite-600);
-  --text-color: var(--granite-900);
-  --text-secondary: var(--granite-600);
-  --text-muted: var(--granite-400);
-  --text-inverse: var(--granite-100);
-  --link-color: var(--summit-orange);
-  --link-hover-color: var(--summit-orange-dark);
-  --border-color: var(--granite-200);
-  --border-strong: var(--granite-300);
+  --background-color: var(--carbon-900);
+  --bg-primary: var(--carbon-950);
+  --bg-dark: var(--carbon-950);
+  --light-color: var(--carbon-100);
+  --dark-color: var(--carbon-600);
+  --text-color: var(--carbon-100);
+  --text-secondary: var(--carbon-300);
+  --text-muted: var(--carbon-500);
+  --text-inverse: var(--carbon-100);
+  --link-color: var(--electric-cyan);
+  --link-hover-color: var(--electric-cyan-light);
+  --border-color: var(--carbon-700);
+  --border-strong: var(--carbon-600);
+
+  /* Glass morphism */
+  --glass-bg: rgba(19, 23, 33, 0.6);
+  --glass-border: rgba(0, 212, 255, 0.12);
+  --glass-blur: blur(12px);
+
+  /* Glow shadows */
+  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.15), 0 0 60px rgba(0, 212, 255, 0.05);
+  --shadow-glow-sm: 0 0 10px rgba(0, 212, 255, 0.1);
 
   /* Typography */
-  --font-display: 'Bebas Neue', sans-serif;
-  --font-heading: 'Barlow Condensed', sans-serif;
-  --font-body: 'Barlow', sans-serif;
+  --font-display: 'Orbitron', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --body-font-family: var(--font-body);
   --heading-font-family: var(--font-heading);
@@ -84,17 +76,17 @@
   --heading-font-size-s: 18px;
   --heading-font-size-xs: 14px;
 
-  /* Spacing & Radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
+  /* Spacing & Radius — sharper */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgb(26 29 33 / 8%);
-  --shadow-md: 0 4px 12px rgb(26 29 33 / 10%);
-  --shadow-lg: 0 8px 30px rgb(26 29 33 / 12%);
-  --shadow-xl: 0 16px 50px rgb(26 29 33 / 16%);
+  --shadow-sm: 0 1px 3px rgb(7 9 12 / 20%);
+  --shadow-md: 0 4px 12px rgb(7 9 12 / 25%);
+  --shadow-lg: 0 8px 30px rgb(7 9 12 / 30%);
+  --shadow-xl: 0 16px 50px rgb(7 9 12 / 40%);
 
   /* Nav height */
   --nav-height: 64px;
@@ -102,21 +94,21 @@
 
 /* fallback fonts */
 @font-face {
-  font-family: barlow-fallback;
-  size-adjust: 100%;
+  font-family: inter-fallback;
+  size-adjust: 107%;
   src: local('Arial');
 }
 
 @font-face {
-  font-family: barlow-condensed-fallback;
-  size-adjust: 90%;
-  src: local('Arial Narrow'), local('Arial');
+  font-family: space-grotesk-fallback;
+  size-adjust: 105%;
+  src: local('Arial');
 }
 
 @font-face {
-  font-family: bebas-neue-fallback;
-  size-adjust: 70%;
-  src: local('Impact'), local('Arial Black');
+  font-family: orbitron-fallback;
+  size-adjust: 115%;
+  src: local('Arial Black'), local('Impact');
 }
 
 body {
@@ -124,7 +116,7 @@ body {
   margin: 0;
   background-color: var(--bg-primary);
   color: var(--text-color);
-  font-family: var(--font-body), barlow-fallback, sans-serif;
+  font-family: var(--font-body), inter-fallback, sans-serif;
   font-size: var(--body-font-size-s);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -163,41 +155,41 @@ h6 {
 }
 
 h1 {
-  font-family: var(--font-display), bebas-neue-fallback, sans-serif;
+  font-family: var(--font-display), orbitron-fallback, sans-serif;
   font-size: var(--heading-font-size-xxl);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   line-height: 0.9;
 }
 
 h2 {
-  font-family: var(--font-display), bebas-neue-fallback, sans-serif;
+  font-family: var(--font-display), orbitron-fallback, sans-serif;
   font-size: var(--heading-font-size-xl);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1;
 }
 
 h3 {
-  font-family: var(--font-heading), barlow-condensed-fallback, sans-serif;
+  font-family: var(--font-heading), space-grotesk-fallback, sans-serif;
   font-size: var(--heading-font-size-l);
   font-weight: 700;
 }
 
 h4 {
-  font-family: var(--font-heading), barlow-condensed-fallback, sans-serif;
+  font-family: var(--font-heading), space-grotesk-fallback, sans-serif;
   font-size: var(--heading-font-size-m);
   font-weight: 700;
 }
 
 h5 {
-  font-family: var(--font-heading), barlow-condensed-fallback, sans-serif;
+  font-family: var(--font-heading), space-grotesk-fallback, sans-serif;
   font-size: var(--heading-font-size-s);
   font-weight: 600;
 }
 
 h6 {
-  font-family: var(--font-heading), barlow-condensed-fallback, sans-serif;
+  font-family: var(--font-heading), space-grotesk-fallback, sans-serif;
   font-size: var(--heading-font-size-xs);
   font-weight: 600;
   letter-spacing: 2px;
@@ -224,17 +216,18 @@ pre {
 pre {
   padding: 16px;
   border-radius: var(--radius-md);
-  background-color: var(--granite-900);
-  color: var(--granite-300);
+  background-color: var(--carbon-950);
+  color: var(--carbon-300);
   overflow-x: auto;
   white-space: pre;
+  border: 1px solid var(--carbon-700);
 }
 
 code {
-  background: var(--granite-100);
+  background: var(--carbon-800);
   padding: 2px 6px;
   border-radius: 3px;
-  color: var(--summit-orange-dark);
+  color: var(--electric-cyan);
 }
 
 pre code {
@@ -259,11 +252,13 @@ a:any-link {
   color: var(--link-color);
   text-decoration: none;
   overflow-wrap: break-word;
+  transition: color 0.2s, text-shadow 0.2s;
 }
 
 a:hover {
   color: var(--link-hover-color);
-  text-decoration: underline;
+  text-decoration: none;
+  text-shadow: 0 0 12px rgba(0, 212, 255, 0.4);
 }
 
 /* buttons */
@@ -275,10 +270,10 @@ button {
   gap: 8px;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
+  border: 1px solid var(--electric-cyan);
   border-radius: var(--radius-md);
   padding: 12px 24px;
-  font-family: var(--font-heading), barlow-condensed-fallback, sans-serif;
+  font-family: var(--font-heading), space-grotesk-fallback, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -287,51 +282,58 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--summit-orange);
-  color: white;
+  background: linear-gradient(135deg, var(--electric-cyan), var(--plasma-violet));
+  color: var(--carbon-950);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--summit-orange-dark);
+  background: linear-gradient(135deg, var(--electric-cyan-light), var(--plasma-violet-light));
+  box-shadow: var(--shadow-glow);
   cursor: pointer;
+  text-shadow: none;
 }
 
 a.button.primary,
 button.primary {
-  background-color: var(--summit-orange);
-  color: white;
+  background: linear-gradient(135deg, var(--electric-cyan), var(--plasma-violet));
+  color: var(--carbon-950);
 }
 
 a.button.primary:hover,
 button.primary:hover {
-  background-color: var(--summit-orange-dark);
+  background: linear-gradient(135deg, var(--electric-cyan-light), var(--plasma-violet-light));
+  box-shadow: var(--shadow-glow);
 }
 
 button:disabled,
 button:disabled:hover {
-  background-color: var(--granite-200);
-  color: var(--granite-400);
+  background: var(--carbon-700);
+  border-color: var(--carbon-600);
+  color: var(--carbon-500);
   cursor: unset;
+  box-shadow: none;
 }
 
 a.button.secondary,
 button.secondary {
-  background-color: transparent;
-  border: 2px solid var(--granite-300);
-  color: var(--text-color);
+  background: transparent;
+  border: 1px solid var(--carbon-400);
+  color: var(--carbon-100);
 }
 
 a.button.secondary:hover,
 button.secondary:hover {
-  border-color: var(--granite-900);
+  border-color: var(--electric-cyan);
+  color: var(--electric-cyan);
+  box-shadow: var(--shadow-glow-sm);
 }
 
 main img {
@@ -375,16 +377,30 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--granite-100);
+  background-color: var(--carbon-800);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
   margin: 0;
   padding: 40px 0;
 }
 
 main .section.dark {
-  background-color: var(--granite-900);
+  background-color: var(--carbon-950);
   color: var(--text-inverse);
   margin: 0;
   padding: 64px 0;
+  position: relative;
+}
+
+main .section.dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
 }
 
 main .section.dark h1,
@@ -397,5 +413,5 @@ main .section.dark h6 {
 }
 
 main .section.dark a:any-link {
-  color: var(--summit-orange-light);
+  color: var(--electric-cyan-light);
 }
