@@ -3,5 +3,5 @@ Please always provide the [GitHub issue(s)](../issues) your PR is for, as well a
 Fix #<gh-issue-id>
 
 Test URLs:
-- Before: https://main--eds-sites--AliaksandrMikhailauDataArt.aem.live/
-- After: https://<branch>--eds-sites--AliaksandrMikhailauDataArt.aem.live/
+- Before: https://main--edsda--AliaksandrMikhailauDataArt.aem.live/
+- After: https://<branch>--edsda--AliaksandrMikhailauDataArt.aem.live/
