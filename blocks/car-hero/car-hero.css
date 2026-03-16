@@ -180,7 +180,7 @@
 .car-hero-swatch {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
+  border-radius: var(--radius-sm);
   border: 2px solid var(--carbon-600);
   background: var(--swatch-color);
   cursor: pointer;
@@ -196,7 +196,7 @@
   content: '';
   position: absolute;
   inset: -4px;
-  border-radius: 50%;
+  border-radius: var(--radius-sm);
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
